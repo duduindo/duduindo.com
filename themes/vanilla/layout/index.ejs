@@ -1,1 +1,5 @@
-<%- partial('_partial/archive', {pagination: 2, index: true}) %>
+<% page.posts.each(function(item){ %>
+    <%- partial('_partial/article-excerpt', {item: item}) %>
+<% }); %>
+
+<%- partial('_partial/pagination') %>
