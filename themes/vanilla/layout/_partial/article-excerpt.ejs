@@ -1,25 +1,26 @@
-<div class="blog-post">
-    <!-- Title -->
-    <h2 class="blog-post-title">
+
+
+
+<div class="row">
+  <article class="col bg-light">
+    <header>
+      <h1 class="h2">
         <a href="<%- config.root %><%- item.path %>">
-            <%- item.title %>
+          <%- item.title %>
         </a>
-    </h2>
-    <!-- Date and Author -->
-    <p class="blog-post-meta">
-        <%= item.date.format(config.date_format) %>
-        <% if(item.author) { %>
-            by <%- item.author %>
-        <% } %>
-    </p>
-    <!-- Content -->
-    <%- item.excerpt || item.content %>
-    <!-- Only display the Read More link if we are displaying an excerpt -->
-    <% if(item.excerpt) { %>
-        <p>
+      </h1>
+
+      <time datetime="<%= item.date.format(config.date_format) %>"><%= item.date.format(config.date_format) %></time>
+
+      <div>
+        <% if(item.excerpt) { %>
+          <p>
             <a href="<%- config.root %><%- item.path %>">
-                <%= theme.excerpt_link %>
+              <%= theme.excerpt_link %>
             </a>
-        </p>
-    <% } %>
+          </p>
+        <% } %>
+      </div>
+    </header>
+  </article>
 </div>
