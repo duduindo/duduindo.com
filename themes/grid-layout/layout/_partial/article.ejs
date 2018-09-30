@@ -3,10 +3,10 @@
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
       <header>
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        <%- partial('post/title') %>
 
         <div>
-          <%- partial('post/date', {class_name: 'small', date_format: null}) %>
+          <%- partial('post/date', {date_format: null}) %>
           <%- partial('post/category') %>
         </div>
       </header>
