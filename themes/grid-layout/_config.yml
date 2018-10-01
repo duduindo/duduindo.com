@@ -6,15 +6,16 @@ rss: /atom.xml
 
 # Content
 excerpt_link: Read More
-fancybox: true
+fancybox: false
 
 # Sidebar
 sidebar: right
 widgets:
-- category
-- tag
-- tagcloud
-- archive
+- about
+# - category
+# - tag
+# - tagcloud
+# - archive
 - recent_posts
 
 # display widgets at the bottom of index pages (pagination == 2)

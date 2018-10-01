@@ -1,8 +1,4 @@
 <% if (site.categories.length){ %>
-  <div class="widget-wrap">
-    <h3 class="widget-title"><%= __('categories') %></h3>
-    <div class="widget">
-      <%- list_categories({show_count: theme.show_count}) %>
-    </div>
-  </div>
+  <h5 class="c-aside__subtitle"><%= __('categories') %></h5>
+  <%- list_categories({show_count: theme.show_count, class: 'c-aside__list'}) %>
 <% } %>

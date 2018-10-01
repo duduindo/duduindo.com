@@ -1,5 +1,9 @@
-<aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
+<div class="is-hidden-xs" id="aside" role="region" aria-live="polite">
   <% theme.widgets.forEach(function(widget){ %>
     <%- partial('_widget/' + widget) %>
   <% }) %>
-</aside>
+</div>
+
+<div class="c-aside__trigger is-hidden-sm is-hidden-md">
+  <button type="button" aria-controls="aside">Open sidebar</button>
+</div>
