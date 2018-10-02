@@ -1,0 +1,5 @@
+<% if (site.posts.length){ %>
+  <h5 class="c-aside__subtitle"><%= __('archive_a') %></h5>
+
+  <%- list_archives({show_count: theme.show_count, type: theme.archive_type, class: 'c-aside__list'}) %>
+<% } %>

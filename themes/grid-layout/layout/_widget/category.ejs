@@ -1,0 +1,4 @@
+<% if (site.categories.length){ %>
+  <h5 class="c-aside__subtitle"><%= __('categories') %></h5>
+  <%- list_categories({show_count: theme.show_count, class: 'c-aside__list'}) %>
+<% } %>

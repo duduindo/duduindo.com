@@ -1,0 +1,5 @@
+<% if (site.tags.length){ %>
+  <h5 class="c-aside__subtitle"><%= __('tags') %></h5>
+
+  <%- list_tags({show_count: theme.show_count, class: 'c-aside__list'}) %>
+<% } %>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<%- partial('_partial/head') %>
+<body>
+  <div class="l-container">
+    <header class="l-masthead">
+      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    </header>
+
+    <main class="l-main">
+      <section><%- body %></section>
+    </main>
+
+    <aside class="l-aside c-aside js-aside">
+      <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+    </aside>
+  </div>
+</body>
+</html>
