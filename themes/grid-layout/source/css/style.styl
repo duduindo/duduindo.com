@@ -34,7 +34,7 @@ for num in (1..6)
 // --------------------------------------------
 .l-container
   display grid
-  grid-template-columns 2fr 6fr 2fr
+  grid-template-columns 1fr 7fr 2fr
   grid-gap 20px 10px
 
 .l-masthead, .l-main, .l-aside
@@ -88,6 +88,38 @@ for num in (1..6)
 
   & + &
     margin-top 20px
+
+  &__header
+    h1
+      font-size 1.4em
+      margin-bottom 0
+
+      @media (min-width: 60em)
+        font-size 1.9em
+
+    h5
+      margin 0 0 5px 0
+
+  &__categories,
+  &__tags
+    ul
+      font-size .9em
+      margin 0
+      padding 0
+
+      li
+        background-color #f1f1f1
+        display inline-block
+        margin 5px 5px
+        padding 0 5px
+
+        &:first-child
+          margin-left 0
+
+      a
+        text-decoration none
+        color black
+
 
 // Masthead
 //

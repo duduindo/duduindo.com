@@ -2,7 +2,7 @@
   <div>
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
-      <header>
+      <header class="c-article__header">
         <%- partial('post/title') %>
 
         <div>
@@ -12,7 +12,7 @@
       </header>
     <% } %>
 
-    <div itemprop="articleBody" class="article-entry">
+    <div itemprop="articleBody" class="c-article__content">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
@@ -25,12 +25,14 @@
       <% } %>
     </div>
 
-    <footer>
+    <footer class="c-article__footer">
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
       <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
       <% } %>
-      <%- partial('post/tag') %>
+      <div class="c-article__tags">
+        <%- partial('post/tag') %>
+      </div>
     </footer>
   </div>
   <% if (!index){ %>
