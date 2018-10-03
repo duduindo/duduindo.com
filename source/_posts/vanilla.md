@@ -1,5 +1,6 @@
 ---
-title: Vanilla
+title: Vanilla - Post de teste
+date: 2018/10/03 14:00:00
 ---
 
 ### Test
