@@ -15,5 +15,9 @@
       <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
     </aside>
   </div>
+
+  <%- js('js/polyfill') %>
+  <%- js('js/sidebar') %>
+  <%- js('js/script') %>
 </body>
 </html>

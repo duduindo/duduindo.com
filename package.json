@@ -1,6 +1,6 @@
 {
-  "name": "hexo-site",
-  "version": "0.1.0",
+  "name": "Duduindo Blog",
+  "version": "0.2.0",
   "private": true,
   "hexo": {
     "version": "3.7.1"
