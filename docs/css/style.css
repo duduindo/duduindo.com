@@ -92,6 +92,41 @@ h6 a:visited {
     grid-row: 2;
   }
 }
+.c-button {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  border-width: 2px;
+  border-radius: 3px;
+  border-style: solid;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+}
+.c-button--green {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+.c-button--blue {
+  background-color: #008cba;
+  border-color: #008cba;
+}
+.c-button--red {
+  background-color: #f44336;
+  border-color: #f44336;
+}
+.c-button--gray {
+  background-color: #e7e7e7;
+  border-color: #e7e7e7;
+  color: #000;
+}
+.c-button--black {
+  background-color: #555;
+  border-color: #555;
+}
 .is-hidden {
   display: none;
 }

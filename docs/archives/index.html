@@ -126,7 +126,7 @@
     </main>
 
     <aside class="l-aside c-aside js-aside">
-      <div class="is-hidden-xs" id="aside" role="region" aria-live="polite">
+      <div class="is-hidden-xs js-aside-target" id="aside" role="region" aria-live="polite">
   
     
   <div class="c-aside__infomation" >
@@ -208,10 +208,14 @@
 </div>
 
 <div class="c-aside__trigger is-hidden-sm is-hidden-md">
-  <button type="button" aria-controls="aside">Open sidebar</button>
+  <button type="button" aria-controls="aside" aria-label="Toggle sidebar" class="c-button c-button--black js-aside-trigger">Who?</button>
 </div>
 
     </aside>
   </div>
+
+  <script src="/js/polyfill.js"></script>
+  <script src="/js/sidebar.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>
