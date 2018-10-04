@@ -80,3 +80,5 @@ theme: grid-layout
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+disqus_shortname: duduindo
